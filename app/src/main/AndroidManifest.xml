@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ceragem.temp.ceragem">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="LHl6aN5rp42RJiIbReOf4MoE3egBoiuOFQxIJ3pO" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="CdJWccxEo0EaeS4fXyBxxUDjjnvUyo6szw3IifRA" />
     </application>
 
 </manifest>
