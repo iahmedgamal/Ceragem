@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-    <EditText android:id="@+id/input_name"
+
+
+
+    <TextView android:id="@+id/input_name"
         android:layout_width="564dp"
+        android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:inputType="text"
         android:hint="name"
+        android:layout_marginLeft="10dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-      " />
+    " />
 
 
 
-    <EditText android:id="@+id/input_phone"
+    <TextView android:id="@+id/input_phone"
         android:layout_width="565dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:inputType="phone"
+        android:layout_marginLeft="10dp"
         android:hint="phone"
         android:layout_below="@+id/input_name"
         android:layout_alignParentLeft="true"
@@ -29,61 +44,69 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText android:id="@+id/input_diagnosis"
+    <TextView android:id="@+id/input_diagnosis"
         android:layout_width="565dp"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:layout_marginLeft="10dp"
         android:hint="Diagnosis"
+        android:layout_marginBottom="10dp"
         android:layout_below="@+id/input_phone"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <EditText android:id="@+id/input_date"
+    <TextView android:id="@+id/input_date"
         android:layout_width="565dp"
         android:layout_height="wrap_content"
         android:inputType="datetime"
+        android:layout_marginBottom="10dp"
         android:hint="Date"
         android:layout_below="@+id/input_diagnosis"
+        android:layout_marginLeft="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText android:id="@+id/input_treatment"
+    <TextView android:id="@+id/input_treatment"
         android:layout_width="565dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:inputType="text"
         android:hint="treatment"
         android:layout_below="@+id/input_date"
         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText android:id="@+id/input_notes"
-        android:layout_width="565dp"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="note"
+
+
+    <GridView android:layout_height="wrap_content"
         android:layout_below="@+id/input_treatment"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/gridView_user"
+        android:horizontalSpacing="1dp"
+        android:numColumns="4"
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add user"
-        android:id="@+id/button"
+        android:layout_width="match_parent"
+        ></GridView>
 
-        android:width="575dp"
-        android:textColor="#ffffff"
-        android:background="@drawable/border_button"
-        android:layout_below="@+id/input_notes"
-        android:layout_centerHorizontal="true" />
+    <!--TODO
+          modify some Attributes of GridView like
+          android:columnWidth=""
+          android:columnWidth
+          android:verticalSpacing
+          android:stretchMode="columnWidth"
+          android:gravity
+
+          -->
+
+
+
+
 
 
 </RelativeLayout>
@@ -91,9 +114,4 @@
 
 
 
-
-
-<!--<ScrollView-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--android:id="@+id/scrollView" />-->
+<!--</ScrollView>-->

@@ -21,7 +21,7 @@
     <EditText android:id="@+id/feedback_email"
         android:layout_width="565dp"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress|phone"
+        android:inputType="textEmailAddress"
         android:hint="Email Address"
         android:layout_below="@+id/feedback_name"
         android:layout_alignParentLeft="true"
